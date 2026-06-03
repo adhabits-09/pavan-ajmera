@@ -1484,6 +1484,7 @@
 <base target="_blank">
 <base target="_blank">
 <base target="_blank">
+<base target="_blank">
 </head>
 <body>
 
@@ -2022,8 +2023,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-// Global flag to prevent duplicate Contact events
-window.__contactEventFired = false;
 lucide.createIcons();
 
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz044nPSDdmX7I4VkylzJwgO__TQcGu7T-4NfFHPdYlwaAxiisBI9GaWdX-rEWbTxUXiw/exec";
@@ -2149,9 +2148,11 @@ document.addEventListener('click',e=>{
   }
 });
 
+
+
 mainForm.addEventListener('submit',function(e){
   e.preventDefault();
-  
+
   const name=document.getElementById('inp_name').value.trim();
   const phone=document.getElementById('inp_phone').value.replace(/\D/g,'');
   const age=document.getElementById('inp_age').value;
@@ -2181,18 +2182,14 @@ mainForm.addEventListener('submit',function(e){
     console.error('Sheet error:', error);
   });
 
-  if(typeof fbq !== 'undefined' && !window.__contactEventFired && !sessionStorage.getItem('contactTracked')){
-    fbq('track', 'Contact');
-    window.__contactEventFired = true;
-    sessionStorage.setItem('contactTracked', 'true');
-  }
+  if(typeof fbq !== 'undefined'){fbq('track', 'Contact');}
 
   const message = encodeURIComponent(
     `Hello Pavan Teli! 👋\n\nI'm interested in your digital mentorship program. Here are my details:\n\n📝 Name: ${name}\n📱 Phone: ${phone}\n🎂 Age: ${age}\n🌐 Language: ${language}\n💼 Status: ${profession}\n\nI'm excited to start my journey. Please share the next steps!\n\nThank you! ✨`
   );
 
   window.open(`https://wa.me/${WA_NUMBER_INT}?text=${message}`, '_blank');
-  
+
   closeForm();
 });
 
