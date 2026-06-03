@@ -2144,43 +2144,14 @@ document.addEventListener('click',e=>{
   const trigger=e.target.closest('.open-any');
   if(trigger&&!trigger.closest('#formContainer')){
     e.preventDefault();
+    // Contact event — sirf ek baar fire hoga per page load
+    if(typeof fbq !== 'undefined' && !window.__contactTracked){
+      fbq('track', 'Contact');
+      window.__contactTracked = true;
+    }
     openForm(trigger.getAttribute('data-source')||'Website');
   }
 });
-
-
-
-mainForm.addEventListener('submit',function(e){
-  e.preventDefault();
-
-  const name=document.getElementById('inp_name').value.trim();
-  const phone=document.getElementById('inp_phone').value.replace(/\D/g,'');
-  const age=document.getElementById('inp_age').value;
-  const language=document.getElementById('inp_language').value;
-  const profession=document.getElementById('inp_profession').value;
-  const source=sourceInfo.value || 'Website';
-
-  if(!name||phone.length<10||!age||!language||!profession){
-    alert('Please fill all fields correctly with a valid 10-digit phone number.');
-    return;
-  }
-
-  const formData = new FormData();
-  formData.append('name', name);
-  formData.append('phone', phone);
-  formData.append('age', age);
-  formData.append('language', language);
-  formData.append('profession', profession);
-  formData.append('source', source);
-  formData.append('timestamp', new Date().toISOString());
-
-  fetch(SCRIPT_URL, {
-    method: 'POST',
-    mode: 'no-cors',
-    body: formData
-  }).catch((error) => {
-    console.error('Sheet error:', error);
-  });
 
   const message = encodeURIComponent(
     `Hello Pavan Teli! 👋\n\nI'm interested in your digital mentorship program. Here are my details:\n\n📝 Name: ${name}\n📱 Phone: ${phone}\n🎂 Age: ${age}\n🌐 Language: ${language}\n💼 Status: ${profession}\n\nI'm excited to start my journey. Please share the next steps!\n\nThank you! ✨`
