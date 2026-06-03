@@ -2182,8 +2182,6 @@ mainForm.addEventListener('submit',function(e){
     console.error('Sheet error:', error);
   });
 
-  if(typeof fbq !== 'undefined'){fbq('track', 'Contact');}
-
   const message = encodeURIComponent(
     `Hello Pavan Teli! 👋\n\nI'm interested in your digital mentorship program. Here are my details:\n\n📝 Name: ${name}\n📱 Phone: ${phone}\n🎂 Age: ${age}\n🌐 Language: ${language}\n💼 Status: ${profession}\n\nI'm excited to start my journey. Please share the next steps!\n\nThank you! ✨`
   );
