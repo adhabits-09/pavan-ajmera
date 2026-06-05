@@ -10,15 +10,15 @@
   <meta property="og:title" content="Pavan Teli – Digital Success Mentor">
   <meta property="og:description" content="Join thousands of individuals building successful digital careers from home. Start your journey with Pavan Teli today.">
   <meta property="og:image" content="https://i.ibb.co/zhw3vsJ8/file-00000000520871fa8ab73c90b7a87340.png">
-  
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  
+
   <!-- Icons -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
@@ -59,9 +59,9 @@
       --glass-bg: rgba(255, 255, 255, 0.1);
       --glass-border: rgba(255, 255, 255, 0.2);
     }
-    
+
     *{box-sizing:border-box;margin:0;padding:0}
-    
+
     body{
       background: #f8fafc;
       color: var(--text-primary);
@@ -191,20 +191,20 @@
       from{opacity:0;transform:translateX(50px);}
       to{opacity:1;transform:translateX(0);}
     }
-    
+
     .animate-float{animation: float 6s ease-in-out infinite;}
     .animate-pulse-glow{animation: pulseGlow 3s infinite;}
     .animate-fade-up{animation:fadeInUp 0.8s ease-out forwards;opacity:0;}
     .animate-scale-in{animation:scaleIn 0.6s ease-out forwards;opacity:0;}
     .animate-slide-left{animation:slideInLeft 0.8s ease-out forwards;opacity:0;}
     .animate-slide-right{animation:slideInRight 0.8s ease-out forwards;opacity:0;}
-    
+
     .delay-100{animation-delay: 0.1s;}
     .delay-200{animation-delay: 0.2s;}
     .delay-300{animation-delay: 0.3s;}
 
     section{padding:80px 0;position:relative;}
-    
+
     .hero-section{
       min-height: 100vh;
       background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 40%, #0ea5e9 100%);
@@ -214,7 +214,7 @@
       position:relative;
       overflow:hidden;
     }
-    
+
     .hero-sphere {
       position: absolute;
       right: -10%;
@@ -231,7 +231,7 @@
         0 0 100px rgba(59, 130, 246, 0.3);
       animation: float 8s ease-in-out infinite;
     }
-    
+
     .hero-sphere::before {
       content: '';
       position: absolute;
@@ -243,7 +243,7 @@
       background: linear-gradient(135deg, rgba(147, 197, 253, 0.4) 0%, transparent 60%);
       filter: blur(20px);
     }
-    
+
     .hero-sphere::after {
       content: '';
       position: absolute;
@@ -255,7 +255,7 @@
       background: linear-gradient(135deg, rgba(6, 182, 212, 0.5) 0%, transparent 70%);
       filter: blur(30px);
     }
-    
+
     .floating-shape {
       position: absolute;
       border-radius: 50%;
@@ -285,12 +285,12 @@
       animation: float 9s ease-in-out infinite 2s;
       background: rgba(6, 182, 212, 0.15);
     }
-    
+
     .hero-content {
       position: relative;
       z-index: 2;
     }
-    
+
     .hero-badge {
       display: inline-flex;
       align-items: center;
@@ -308,7 +308,7 @@
       text-transform: uppercase;
       letter-spacing: 1px;
     }
-    
+
     .hero-headline{
       font-size:3.5rem;
       font-weight:800;
@@ -317,14 +317,14 @@
       color:white;
       letter-spacing: -2px;
     }
-    
+
     .hero-headline .highlight{
       background: linear-gradient(135deg, #60a5fa, #22d3ee);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       position: relative;
     }
-    
+
     .hero-subheadline{
       font-size:1.2rem;
       font-weight:400;
@@ -345,7 +345,7 @@
       animation: fadeInUp 0.8s ease-out 0.3s forwards;
       opacity: 0;
     }
-    
+
     .countdown-label {
       font-size: 0.8rem;
       color: rgba(255,255,255,0.8);
@@ -354,13 +354,13 @@
       margin-bottom: 0.8rem;
       font-weight: 600;
     }
-    
+
     .countdown-timer {
       display: flex;
       gap: 20px;
       justify-content: center;
     }
-    
+
     .countdown-item {
       text-align: center;
       min-width: 70px;
@@ -369,7 +369,7 @@
       padding: 10px;
       border: 1px solid rgba(255, 255, 255, 0.2);
     }
-    
+
     .countdown-value {
       font-size: 2rem;
       font-weight: 800;
@@ -377,7 +377,7 @@
       font-family: 'Poppins', sans-serif;
       line-height: 1;
     }
-    
+
     .countdown-unit {
       font-size: 0.7rem;
       color: rgba(255,255,255,0.7);
@@ -405,7 +405,7 @@
       position: relative;
       overflow: hidden;
     }
-    
+
     .btn-primary-custom::before {
       content: '';
       position: absolute;
@@ -416,11 +416,11 @@
       background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.1), transparent);
       transition: left 0.5s;
     }
-    
+
     .btn-primary-custom:hover::before {
       left: 100%;
     }
-    
+
     .btn-primary-custom:hover{
       transform:translateY(-3px) scale(1.02);
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
@@ -434,7 +434,7 @@
       position: relative;
       overflow: hidden;
     }
-    
+
     .mentor-photo-section::before {
       content: '';
       position: absolute;
@@ -444,7 +444,7 @@
       height: 200px;
       background: linear-gradient(180deg, #1e3a8a 0%, transparent 100%);
     }
-    
+
     .mentor-photo-container {
       position: relative;
       display: inline-block;
@@ -453,7 +453,7 @@
       max-width: 400px;
       width: 90%;
     }
-    
+
     .mentor-photo-wrapper {
       position: relative;
       border-radius: 20px;
@@ -464,7 +464,7 @@
       background: white;
       padding: 8px;
     }
-    
+
     .mentor-photo {
       width: 100%;
       height: auto;
@@ -472,11 +472,11 @@
       border-radius: 12px;
       transition: transform 0.5s ease;
     }
-    
+
     .mentor-photo-wrapper:hover .mentor-photo {
       transform: scale(1.03);
     }
-    
+
     .corner-decoration {
       position: absolute;
       width: 40px;
@@ -484,7 +484,7 @@
       border: 3px solid rgba(255, 255, 255, 0.8);
       z-index: 3;
     }
-    
+
     .corner-tl {
       top: -5px;
       left: -5px;
@@ -492,7 +492,7 @@
       border-bottom: none;
       border-radius: 12px 0 0 0;
     }
-    
+
     .corner-tr {
       top: -5px;
       right: -5px;
@@ -500,7 +500,7 @@
       border-bottom: none;
       border-radius: 0 12px 0 0;
     }
-    
+
     .corner-bl {
       bottom: -5px;
       left: -5px;
@@ -508,7 +508,7 @@
       border-top: none;
       border-radius: 0 0 0 12px;
     }
-    
+
     .corner-br {
       bottom: -5px;
       right: -5px;
@@ -522,7 +522,7 @@
       position: relative;
       padding-top: 40px;
     }
-    
+
     .about-section::before {
       content: '';
       position: absolute;
@@ -532,7 +532,7 @@
       height: 1px;
       background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
     }
-    
+
     .section-tag {
       display: inline-block;
       color: var(--primary-blue);
@@ -544,7 +544,7 @@
       position: relative;
       padding-left: 40px;
     }
-    
+
     .section-tag::before {
       content: '';
       position: absolute;
@@ -556,14 +556,14 @@
       background: linear-gradient(90deg, var(--primary-blue), var(--accent-cyan));
       border-radius: 2px;
     }
-    
+
     .about-text-container h2 {
       font-size: 2.8rem;
       margin-bottom: 0.5rem;
       color: var(--text-primary);
       font-weight: 800;
     }
-    
+
     .about-role {
       color: var(--primary-blue);
       font-weight: 600;
@@ -574,19 +574,19 @@
       gap: 10px;
       justify-content: center;
     }
-    
+
     .about-role::before {
       content: '\2014';
       color: var(--accent-cyan);
     }
-    
+
     .about-text-container p {
       color: var(--text-secondary);
       font-size: 1.05rem;
       line-height: 1.8;
       margin-bottom: 1.2rem;
     }
-    
+
     .btn-secondary-custom{
       display:inline-flex;
       align-items:center;
@@ -603,18 +603,18 @@
       cursor:pointer;
       margin-top: 1rem;
     }
-    
+
     .btn-secondary-custom:hover{
       background: var(--primary-blue);
       color: white;
       transform:translateY(-2px);
       box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
     }
-    
+
     .stats-container {
       margin-top: 2.5rem;
     }
-    
+
     .stat-card{
       background: white;
       padding:2rem 1rem;
@@ -627,7 +627,7 @@
       position: relative;
       overflow: hidden;
     }
-    
+
     .stat-card::before {
       content: '';
       position: absolute;
@@ -639,17 +639,17 @@
       transform: scaleX(0);
       transition: transform 0.4s ease;
     }
-    
+
     .stat-card:hover{
       transform:translateY(-8px);
       box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15);
       border-color: #bfdbfe;
     }
-    
+
     .stat-card:hover::before {
       transform: scaleX(1);
     }
-    
+
     .counter{
       font-size:3rem;
       font-weight:800;
@@ -660,7 +660,7 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    
+
     .stat-card .text-muted{
       color:var(--text-secondary) !important; 
       font-size: 0.9rem;
@@ -674,7 +674,7 @@
       overflow:hidden;
       position: relative;
     }
-    
+
     .feedback-section::before {
       content: '\201C';
       position: absolute;
@@ -687,28 +687,28 @@
       line-height: 1;
       pointer-events: none;
     }
-    
+
     .feedback-viewport{
       overflow:hidden;
       margin:2rem 0;
       mask:linear-gradient(90deg,transparent 0%,black 8%,black 92%,transparent 100%);
       -webkit-mask:linear-gradient(90deg,transparent 0%,black 8%,black 92%,transparent 100%);
     }
-    
+
     .feedback-track{
       display:flex;
       gap:25px;
       width:max-content;
       animation:scrollLeft 35s linear infinite;
     }
-    
+
     .feedback-track:hover{animation-play-state:paused;}
-    
+
     @keyframes scrollLeft{
       0%{transform:translateX(0);}
       100%{transform:translateX(-50%);}
     }
-    
+
     .feedback-item{
       flex-shrink:0;
       width:300px;
@@ -721,13 +721,13 @@
       background:white;
       box-shadow: 0 8px 25px rgba(0,0,0,0.06);
     }
-    
+
     .feedback-item:hover{
       transform:scale(1.03) translateY(-5px);
       box-shadow: 0 20px 50px rgba(37, 99, 235, 0.2);
       border-color: #bfdbfe;
     }
-    
+
     .feedback-item img{
       width:100%;
       height:100%;
@@ -735,7 +735,7 @@
       display:block;
       transition: transform 0.5s ease;
     }
-    
+
     .feedback-item:hover img {
       transform: scale(1.1);
     }
@@ -744,7 +744,7 @@
       background: white;
       position: relative;
     }
-    
+
     .step-card{
       background: white;
       border-radius: 20px;
@@ -757,7 +757,7 @@
       overflow: hidden;
       box-shadow: 0 4px 15px rgba(0,0,0,0.03);
     }
-    
+
     .step-card::after {
       content: '';
       position: absolute;
@@ -769,17 +769,17 @@
       transition: height 0.4s ease;
       z-index: 0;
     }
-    
+
     .step-card:hover{
       transform:translateY(-8px);
       border-color: #bfdbfe;
       box-shadow: 0 15px 40px rgba(37, 99, 235, 0.15);
     }
-    
+
     .step-card:hover::after {
       height: 100%;
     }
-    
+
     .step-icon {
       width: 60px;
       height: 60px;
@@ -795,7 +795,7 @@
       font-size: 1.5rem;
       box-shadow: 0 4px 15px rgba(37, 99, 235, 0.1);
     }
-    
+
     .step-number{
       width:40px; 
       height:40px;
@@ -812,7 +812,7 @@
       z-index: 1;
       box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
     }
-    
+
     .step-card h3{
       color:var(--text-primary); 
       font-size: 1.1rem; 
@@ -821,7 +821,7 @@
       position: relative;
       z-index: 1;
     }
-    
+
     .step-card p{
       color:var(--text-secondary); 
       font-size: 0.9rem;
@@ -835,7 +835,7 @@
       background: #f8fafc;
       position: relative;
     }
-    
+
     .accordion-item{
       background: white;
       border: 1px solid #e2e8f0;
@@ -845,12 +845,12 @@
       box-shadow: 0 4px 15px rgba(0,0,0,0.03);
       transition: all 0.3s ease;
     }
-    
+
     .accordion-item:hover {
       box-shadow: 0 8px 25px rgba(37, 99, 235, 0.1);
       border-color: #bfdbfe;
     }
-    
+
     .accordion-button{
       background: white;
       color: var(--text-primary);
@@ -860,17 +860,17 @@
       box-shadow:none !important;
       font-size: 1.05rem;
     }
-    
+
     .accordion-button:not(.collapsed){
       background: white;
       color: var(--primary-blue);
     }
-    
+
     .accordion-button::after {
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
       transition: transform 0.3s ease;
     }
-    
+
     .accordion-body{
       background: white;
       color:var(--text-secondary);
@@ -884,7 +884,7 @@
       position:relative;
       overflow:hidden;
     }
-    
+
     .cta-card{
       background: white;
       border-radius: 24px;
@@ -893,7 +893,7 @@
       position: relative;
       overflow: hidden;
     }
-    
+
     .cta-card::before {
       content: '';
       position: absolute;
@@ -904,7 +904,7 @@
       background: radial-gradient(circle, rgba(37, 99, 235, 0.03) 0%, transparent 70%);
       pointer-events: none;
     }
-    
+
     .info-box{
       background: #f8fafc;
       border: 1px solid #e2e8f0;
@@ -914,21 +914,21 @@
       transition: all 0.3s ease;
       padding: 1.2rem;
     }
-    
+
     .info-box:hover {
       transform: translateY(-3px);
       box-shadow: 0 10px 25px rgba(37, 99, 235, 0.1);
       border-color: #bfdbfe;
       background: white;
     }
-    
+
     .info-box strong {
       color: var(--text-primary);
       display: block;
       margin-bottom: 0.3rem;
       font-size: 0.95rem;
     }
-    
+
     .insta-link{
       display:inline-flex;
       align-items:center;
@@ -944,7 +944,7 @@
       background: linear-gradient(135deg, #eff6ff, #ecfeff);
       border: 1px solid #bfdbfe;
     }
-    
+
     .insta-link:hover{
       background: linear-gradient(135deg, #dbeafe, #cffafe);
       transform: translateY(-2px);
@@ -960,7 +960,7 @@
       transition:all .4s ease;
     }
     .form-backdrop.show{opacity:1;visibility:visible;}
-    
+
     #formContainer{
       position:fixed;top:50%;left:50%;
       transform:translate(-50%,-50%) scale(.9);
@@ -970,12 +970,12 @@
       opacity:0;visibility:hidden;
       transition:all .4s ease;
     }
-    
+
     #formContainer.show{
       opacity:1;visibility:visible;
       transform:translate(-50%,-50%) scale(1);
     }
-    
+
     .form-card{
       background: white;
       border-radius: 24px;
@@ -983,7 +983,7 @@
       border: 1px solid #e2e8f0;
       overflow: hidden;
     }
-    
+
     .form-header {
       background: linear-gradient(135deg, #1e40af, #3b82f6);
       padding: 2rem;
@@ -991,17 +991,17 @@
       border-bottom: 1px solid rgba(255,255,255,0.2);
       color: white;
     }
-    
+
     .form-header h2 {
       color: white;
       margin-bottom: 0.5rem;
       font-weight: 700;
     }
-    
+
     .form-header p {
       color: rgba(255,255,255,0.9);
     }
-    
+
     .form-control,.form-select{
       background: #f8fafc;
       border: 1px solid #e2e8f0;
@@ -1011,21 +1011,21 @@
       font-size: 0.95rem;
       transition: all 0.3s ease;
     }
-    
+
     .form-control:focus,.form-select:focus{
       background: white;
       border-color: var(--primary-blue);
       color: var(--text-primary);
       box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
     }
-    
+
     .form-label{
       color:var(--text-secondary);
       font-weight:600;
       margin-bottom:0.5rem;
       font-size: 0.9rem;
     }
-    
+
     .btn-submit{
       background: linear-gradient(135deg, var(--primary-blue), var(--accent-cyan));
       color: white;
@@ -1039,7 +1039,7 @@
       margin-top: 0.5rem;
       box-shadow: 0 5px 20px rgba(37, 99, 235, 0.3);
     }
-    
+
     .btn-submit:hover{
       transform:translateY(-2px);
       box-shadow: 0 10px 30px rgba(37, 99, 235, 0.4);
@@ -1059,7 +1059,7 @@
       opacity:1;
       visibility:visible;
     }
-    
+
     .pp-modal{
       position:fixed;
       top:50%; left:50%;
@@ -1077,12 +1077,12 @@
       border: 1px solid #e2e8f0;
       overflow: hidden;
     }
-    
+
     .pp-overlay.show .pp-modal{
       opacity:1; visibility:visible;
       transform:translate(-50%,-50%) scale(1);
     }
-    
+
     .pp-header{
       display:flex;
       align-items:center;
@@ -1091,14 +1091,14 @@
       border-bottom:1px solid #e2e8f0;
       background: linear-gradient(135deg, #eff6ff, white);
     }
-    
+
     .pp-title{
       font-size:1.3rem;
       font-weight:800;
       color:var(--primary-blue);
       font-family: 'Poppins', sans-serif;
     }
-    
+
     .pp-close{
       background:none; border:none;
       font-size:1.8rem;
@@ -1112,12 +1112,12 @@
       justify-content: center;
       border-radius: 50%;
     }
-    
+
     .pp-close:hover{ 
       color:var(--primary-blue);
       background: #eff6ff;
     }
-    
+
     .pp-body{
       padding:1.5rem;
       overflow-y:auto;
@@ -1125,16 +1125,16 @@
       line-height:1.7;
       color:var(--text-secondary);
     }
-    
+
     .pp-body h3{
       font-size:1.1rem;
       font-weight:700;
       margin:1.5rem 0 0.8rem;
       color:var(--text-primary);
     }
-    
+
     .pp-body h3:first-child{ margin-top:0; }
-    
+
     .pp-footer{
       margin-top:1.5rem;
       padding-top:1rem;
@@ -1150,7 +1150,7 @@
       padding:60px 0 30px;
       position: relative;
     }
-    
+
     .footer::before {
       content: '';
       position: absolute;
@@ -1160,7 +1160,7 @@
       height: 4px;
       background: linear-gradient(90deg, var(--primary-blue), var(--accent-cyan), var(--primary-light));
     }
-    
+
     .footer-brand{
       font-family:'Poppins',sans-serif;
       font-size:2rem;
@@ -1171,7 +1171,7 @@
       align-items: center;
       gap: 10px;
     }
-    
+
     .footer-brand::before {
       content: '';
       width: 35px;
@@ -1180,19 +1180,19 @@
       border-radius: 8px;
       display: inline-block;
     }
-    
+
     .footer-text{
       color:var(--text-light);
       font-size:0.95rem;
       line-height:1.8;
     }
-    
+
     .social-icons{
       display:flex;
       gap:1rem;
       margin-top:1.5rem;
     }
-    
+
     .social-icon{
       width:45px;
       height:45px;
@@ -1206,7 +1206,7 @@
       text-decoration:none;
       border: 1px solid rgba(255,255,255,0.2);
     }
-    
+
     .social-icon:hover{
       background:var(--primary-blue);
       color:white;
@@ -1214,7 +1214,7 @@
       border-color: var(--primary-blue);
       box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
     }
-    
+
     .footer h5{
       font-weight:700;
       margin-bottom:1.5rem;
@@ -1223,7 +1223,7 @@
       position: relative;
       padding-bottom: 10px;
     }
-    
+
     .footer h5::after {
       content: '';
       position: absolute;
@@ -1234,16 +1234,16 @@
       background: linear-gradient(90deg, var(--accent-cyan), var(--primary-light));
       border-radius: 2px;
     }
-    
+
     .footer-links{
       list-style:none;
       padding:0;
     }
-    
+
     .footer-links li{
       margin-bottom:0.8rem;
     }
-    
+
     .footer-links a{
       color:var(--text-light);
       text-decoration:none;
@@ -1251,12 +1251,12 @@
       font-size: 0.95rem;
       display: inline-block;
     }
-    
+
     .footer-links a:hover{
       color:var(--accent-cyan);
       padding-left: 5px;
     }
-    
+
     .copyright{
       text-align:center;
       padding-top:30px;
@@ -1265,7 +1265,7 @@
       color:var(--text-light);
       font-size:0.9rem;
     }
-    
+
     .copyright span {
       color: var(--accent-cyan);
     }
@@ -1290,7 +1290,7 @@
       transition: all 0.3s ease;
       animation: pulseGlow 2s infinite;
     }
-    
+
     .whatsapp-float:hover {
       transform: scale(1.1);
       box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
@@ -1298,86 +1298,86 @@
 
     @media(max-width:768px){
       section{padding:60px 0;}
-      
+
       .hero-section{
         padding:100px 15px 50px; 
         min-height: auto;
         text-align: center;
       }
-      
+
       .hero-sphere {
         width: 300px;
         height: 300px;
         right: -50%;
         opacity: 0.5;
       }
-      
+
       .hero-headline{
         font-size:1.8rem;
         line-height: 1.3;
         max-width: 100%;
         padding: 0 10px;
       }
-      
+
       .hero-subheadline{
         font-size: 0.95rem;
         margin-left: auto;
         margin-right: auto;
         padding: 0 10px;
       }
-      
+
       .countdown-container {
         margin-left: auto;
         margin-right: auto;
         padding: 1rem 0.8rem;
         max-width: 320px;
       }
-      
+
       .countdown-timer {
         gap: 8px;
       }
-      
+
       .countdown-item {
         min-width: 55px;
         padding: 8px 5px;
         border-radius: 8px;
       }
-      
+
       .countdown-value {
         font-size: 1.3rem;
       }
-      
+
       .countdown-unit {
         font-size: 0.6rem;
       }
-      
+
       .countdown-label {
         font-size: 0.7rem;
         margin-bottom: 0.6rem;
       }
-      
+
       .mentor-photo-section {
         padding: 80px 0 40px;
       }
-      
+
       .mentor-photo-container {
         max-width: 320px;
       }
-      
+
       .corner-decoration {
         width: 30px;
         height: 30px;
       }
-      
+
       .about-text-container h2 {
         font-size: 1.8rem;
         white-space: nowrap;
       }
-      
+
       .stat-card {
         margin-bottom: 15px;
       }
-      
+
       .steps-section h2 {
         font-size: 1.5rem !important;
         line-height: 1.3;
@@ -1385,35 +1385,35 @@
         margin-left: auto;
         margin-right: auto;
       }
-      
+
       .step-card {
         margin-bottom: 10px;
         padding: 1rem 0.8rem;
         border-radius: 16px;
       }
-      
+
       .step-icon {
         width: 45px;
         height: 45px;
         border-radius: 12px;
         margin-bottom: 0.6rem;
       }
-      
+
       .step-icon svg {
         width: 20px;
         height: 20px;
       }
-      
+
       .step-number{
         display: none;
       }
-      
+
       .step-card h3{
         font-size: 0.85rem;
         margin-bottom: 0.4rem;
         line-height: 1.3;
       }
-      
+
       .step-card p{
         font-size: 0.75rem;
         line-height: 1.4;
@@ -1422,24 +1422,24 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
       }
-      
+
       .feedback-item {
         width: 260px;
         height: 350px;
       }
-      
+
       .btn-primary-custom, .btn-secondary-custom {
         padding: 0.9rem 1.5rem;
         font-size: 0.95rem;
       }
     }
-    
+
     @media(prefers-reduced-motion:reduce){
       *{animation-duration:.01ms !important;transition-duration:.01ms !important;}
       .feedback-track{animation:none !important;}
       .animate-float {animation: none !important;}
     }
-    
+
     ::-webkit-scrollbar {
       width: 8px;
     }
@@ -1453,7 +1453,7 @@
     ::-webkit-scrollbar-thumb:hover {
       background: #64748b;
     }
-  
+
     .empire-section {
       padding: 80px 0;
     }
@@ -1476,11 +1476,7 @@
         font-size: 0.9rem !important;
       }
     }
-    </style>
-<base target="_blank">
-<base target="_blank">
-<base target="_blank">
-<base target="_blank">
+  </style>
 <base target="_blank">
 </head>
 <body>
@@ -1513,7 +1509,7 @@
   <div class="floating-shape shape-1"></div>
   <div class="floating-shape shape-2"></div>
   <div class="floating-shape shape-3"></div>
-  
+
   <div class="container position-relative">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center hero-content">
@@ -1521,15 +1517,15 @@
           <i data-lucide="crown" width="16"></i>
           Premium Digital Mentorship
         </div>
-        
+
         <h1 class="hero-headline animate-fade-up">
           Empowering <span class="highlight">Dreamers</span> to Build Digital Success from Anywhere
         </h1>
-        
+
         <p class="hero-subheadline animate-fade-up delay-100" style="margin-left: auto; margin-right: auto;">
           Join an exclusive community of ambitious individuals mastering phone-based digital skills. Transform your passion into a thriving income stream with personalized mentorship.
         </p>
-        
+
         <div class="countdown-container" style="margin-left: auto; margin-right: auto;">
           <div class="countdown-label">&#9200; Next Cohort Starts In</div>
           <div class="countdown-timer" id="countdown">
@@ -1551,7 +1547,7 @@
             </div>
           </div>
         </div>
-        
+
         <button class="btn-primary-custom open-any animate-fade-up delay-200" data-source="Hero Button">
           <i data-lucide="message-circle-heart" width="20"></i>
           Start Your Journey
@@ -1586,26 +1582,26 @@
           <h2 style="font-size: 2.8rem; margin-bottom: 0.5rem; color: var(--text-primary);">Hello, I'm Pavan Teli</h2>
           <div class="about-role" style="justify-content: center;">Digital Success Strategist &amp; Empowerment Coach</div>
         </div>
-        
+
         <div class="about-text-container text-center">
           <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.2rem;">
             Over the years, I've witnessed countless talented individuals struggle to find their footing in the digital landscape—not because they lacked capability, but because they lacked the right guidance and a supportive ecosystem. This realization became the catalyst for my mission.
           </p>
-          
+
           <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.2rem;">
             Today, I specialize in helping people—from college students to working professionals and homemakers—discover their unique digital strengths and monetize them effectively. My approach combines practical skill-building with mindset transformation, ensuring you don't just learn, but actually implement and succeed.
           </p>
-          
+
           <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
             Whether you're looking to supplement your income or build a full-fledged digital career, I provide the roadmap, tools, and unwavering support you need to make it happen. Your success story starts with a single decision.
           </p>
-          
+
           <button class="btn-secondary-custom open-any" data-source="About Section">
             <i data-lucide="heart-handshake" width="18"></i>
             Let's Connect
           </button>
         </div>
-        
+
         <div class="row g-3 stats-container mt-5">
           <div class="col-12 col-md-4">
             <div class="stat-card">
@@ -1641,7 +1637,7 @@
         Witness the transformations of individuals who took the leap and built their digital success stories with Pavan's mentorship
       </p>
     </div>
-    
+
     <div class="feedback-viewport">
       <div class="feedback-track">
         <!-- Satyajit - Earned 50,000 -->
@@ -1657,7 +1653,7 @@
         <div class="feedback-item"><img src="https://i.ibb.co/6z8V737/Screenshot-2026-05-23-15-13-05-82-6012fa4d4ddec268fc5c7112cbb265e7-jpg.jpg" alt="Achad - Earned 36,000 in 15 Days" loading="lazy"></div>
       </div>
     </div>
-    
+
     <div class="text-center mt-5 px-2">
       <button class="btn-primary-custom open-any" data-source="Feedback Section">
         <i data-lucide="sparkles" width="18"></i>
@@ -1685,7 +1681,7 @@
 
     <div class="earnings-text" style="margin-top: 50px; text-align: center;">
       <h3 style="font-size: 2.2rem; font-weight: 800; color: var(--primary-blue); margin-bottom: 8px; font-family: 'Poppins', sans-serif; background: linear-gradient(135deg, var(--primary-blue), var(--accent-cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-        ₹7,00,000+ Total Earnings
+        &#8377;7,00,000+ Total Earnings
       </h3>
       <p style="font-size: 1.1rem; color: var(--text-secondary); font-weight: 500;">
         Real-time proof of consistent income growth
@@ -1704,7 +1700,7 @@
         A proven 4-step framework designed to take you from curious beginner to confident digital earner
       </p>
     </div>
-    
+
     <div class="row g-3">
       <div class="col-6 col-lg-3">
         <div class="step-card h-100">
@@ -1747,7 +1743,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="text-center mt-4">
       <button class="btn-secondary-custom open-any" data-source="Steps">
         <i data-lucide="rocket" width="18"></i>
@@ -1764,7 +1760,7 @@
       <span class="section-tag" style="padding-left: 0; display: inline-block;">Got Questions?</span>
       <h2 class="display-5 fw-bold" style="color:var(--text-primary);">Frequently Asked Questions</h2>
     </div>
-    
+
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <div class="accordion" id="faqAccordion">
@@ -1780,7 +1776,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
@@ -1793,7 +1789,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
@@ -1806,7 +1802,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
@@ -1833,11 +1829,11 @@
     <p class="mb-4" style="color:var(--text-secondary); max-width: 600px; margin: 0 auto;">
       Thousands of individuals have already transformed their lives. The only question remaining is: will you be next?
     </p>
-    
+
     <div class="cta-card p-4 p-md-5 mb-4 mx-auto" style="max-width: 700px;">
       <h3 class="h4 fw-bold mb-3" style="color:var(--text-primary);">&#128241; Quick Start Checklist</h3>
       <p class="mb-4" style="color:var(--text-secondary);">Before reaching out, keep these details handy for a seamless onboarding:</p>
-      
+
       <div class="row g-3 mb-4 text-start">
         <div class="col-md-4">
           <div class="info-box h-100">
@@ -1858,22 +1854,22 @@
           </div>
         </div>
       </div>
-      
+
       <button class="btn-primary-custom open-any animate-pulse-glow" data-source="Final CTA" style="border: none;">
         <i data-lucide="send" width="18"></i>
         Connect on WhatsApp Now
       </button>
     </div>
-    
+
     <p class="small mb-3" style="color:var(--text-secondary); font-style: italic;">
       "Every expert was once a beginner. Your journey to financial independence starts with a single message."
     </p>
-    
+
     <a href="https://www.instagram.com/thepavanpreneur" target="_blank" class="insta-link">
       <i data-lucide="instagram" width="20"></i>
       Follow @thepavanpreneur
     </a>
-    
+
     <div class="mt-4">
       <button class="btn btn-outline-secondary btn-sm" id="privacyBtn" style="font-size: 0.8rem; border-color: #e2e8f0; color: var(--text-secondary); padding: 8px 20px; border-radius: 20px;">
         <i data-lucide="shield" width="14" style="vertical-align: middle; margin-right: 5px;"></i>
@@ -1904,7 +1900,7 @@
           </a>
         </div>
       </div>
-      
+
       <div class="col-lg-3">
         <h5>Explore</h5>
         <ul class="footer-links">
@@ -1945,16 +1941,16 @@
     <div class="pp-body">
       <h3>Information Collection</h3>
       <p>When you connect with us, we collect basic information including your name, contact number, age, and professional background. This data helps us understand your needs and provide personalized mentorship.</p>
-      
+
       <h3>Use of Information</h3>
       <p>Your information is used exclusively to communicate program details, provide mentorship support, and track your progress. We never share your personal data with unrelated third parties for marketing purposes.</p>
-      
+
       <h3>Data Security</h3>
       <p>We implement industry-standard security measures to protect your personal information. Your data is stored securely and accessed only by authorized personnel directly involved in your mentorship.</p>
-      
+
       <h3>Your Rights</h3>
       <p>You have the right to request access to, correction of, or deletion of your personal data at any time. Simply reach out via WhatsApp to exercise these rights.</p>
-      
+
       <div class="pp-footer">By engaging with our services, you acknowledge this privacy policy.</div>
     </div>
   </div>
@@ -1969,7 +1965,7 @@
     </div>
     <div class="card-body p-4 position-relative">
       <button id="closeFormBtn" class="btn-close position-absolute" style="top: 15px; right: 15px;" aria-label="Close"></button>
-      
+
       <form id="mainForm" novalidate>
         <input type="hidden" id="sourceInfo" name="sourceInfo">
         <div class="row g-3">
@@ -2020,27 +2016,55 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script>
+// Initialize Lucide icons
 lucide.createIcons();
 
+// Google Sheet Script URL
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz044nPSDdmX7I4VkylzJwgO__TQcGu7T-4NfFHPdYlwaAxiisBI9GaWdX-rEWbTxUXiw/exec";
 
+// WhatsApp Number (with country code, no + or spaces)
+const WA_NUMBER_INT = "917568657785";
+
+/* ============================================================
+   META PIXEL TRACKING - CONTACT EVENT
+
+   Rule: Contact event fires ONLY ONCE per session, and ONLY 
+   when user completes the FULL funnel:
+   1. Clicks any CTA button (opens form popup)
+   2. Fills out the form with all details
+   3. Clicks "Send & Connect on WhatsApp" (form submit)
+   4. Gets redirected to WhatsApp with all details
+
+   The event does NOT fire on any other button clicks.
+   sessionStorage ensures it fires only once per browser tab.
+   ============================================================ */
+
+function trackContactEvent() {
+  if (typeof fbq !== 'undefined' && !sessionStorage.getItem('pavan_contact_tracked')) {
+    fbq('track', 'Contact');
+    sessionStorage.setItem('pavan_contact_tracked', 'true');
+    console.log("[Meta Pixel] Contact event tracked successfully (once per session)");
+  }
+}
+
+// Countdown Timer
 function updateCountdown() {
   const now = new Date();
   const nextMonday = new Date();
   nextMonday.setDate(now.getDate() + (1 + 7 - now.getDay()) % 7);
   nextMonday.setHours(0, 0, 0, 0);
-  
+
   if (now.getDay() === 1) {
     nextMonday.setDate(now.getDate() + 7);
   }
-  
+
   const diff = nextMonday - now;
-  
+
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
   const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-  
+
   document.getElementById('days').textContent = String(days).padStart(2, '0');
   document.getElementById('hours').textContent = String(hours).padStart(2, '0');
   document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
@@ -2050,34 +2074,37 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
-window.addEventListener('scroll',function(){
-  const navbar=document.querySelector('.navbar');
-  if(window.scrollY>50){
+// Navbar scroll effect
+window.addEventListener('scroll', function(){
+  const navbar = document.querySelector('.navbar');
+  if (window.scrollY > 50) {
     navbar.classList.add('scrolled');
-  }else{
+  } else {
     navbar.classList.remove('scrolled');
   }
 });
 
-const counters=document.querySelectorAll('.counter');
-const counterObserver=new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting&&!entry.target.classList.contains('counted')){
+// Counter animation
+const counters = document.querySelectorAll('.counter');
+const counterObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
       entry.target.classList.add('counted');
-      const target=+entry.target.getAttribute('data-target');
-      const suffix=entry.target.getAttribute('data-suffix')||'';
-      let current=0;
-      const inc=Math.max(1,Math.floor(target/50));
-      const timer=setInterval(()=>{
-        current+=inc;
-        if(current>=target){current=target;clearInterval(timer);}
-        entry.target.textContent=current.toLocaleString()+suffix;
-      },30);
+      const target = +entry.target.getAttribute('data-target');
+      const suffix = entry.target.getAttribute('data-suffix') || '';
+      let current = 0;
+      const inc = Math.max(1, Math.floor(target / 50));
+      const timer = setInterval(() => {
+        current += inc;
+        if (current >= target) { current = target; clearInterval(timer); }
+        entry.target.textContent = current.toLocaleString() + suffix;
+      }, 30);
     }
   });
-},{threshold:0.3});
-counters.forEach(counter=>counterObserver.observe(counter));
+}, { threshold: 0.3 });
+counters.forEach(counter => counterObserver.observe(counter));
 
+// Scroll animations
 const observerOptions = {
   threshold: 0.1,
   rootMargin: '0px 0px -50px 0px'
@@ -2096,70 +2123,88 @@ document.querySelectorAll('.animate-fade-up, .animate-slide-left, .animate-slide
   observer.observe(el);
 });
 
-const formBackdrop=document.getElementById('formBackdrop');
-const formContainer=document.getElementById('formContainer');
-const mainForm=document.getElementById('mainForm');
-const sourceInfo=document.getElementById('sourceInfo');
-const closeFormBtn=document.getElementById('closeFormBtn');
-const ppOverlay=document.getElementById('ppOverlay');
-const ppClose=document.getElementById('ppClose');
-const privacyBtn=document.getElementById('privacyBtn');
+// Form popup elements
+const formBackdrop = document.getElementById('formBackdrop');
+const formContainer = document.getElementById('formContainer');
+const mainForm = document.getElementById('mainForm');
+const sourceInfo = document.getElementById('sourceInfo');
+const closeFormBtn = document.getElementById('closeFormBtn');
+const ppOverlay = document.getElementById('ppOverlay');
+const ppClose = document.getElementById('ppClose');
+const privacyBtn = document.getElementById('privacyBtn');
 
-const WA_NUMBER_INT="917568657785";
-
-function openForm(source='Website'){
-  sourceInfo.value=source;
+// Open form popup (NO pixel tracking here - just opens the form)
+function openForm(source = 'Website') {
+  sourceInfo.value = source;
   formBackdrop.classList.add('show');
   formContainer.classList.add('show');
-  document.body.style.overflow='hidden';
+  document.body.style.overflow = 'hidden';
 }
 
-function closeForm(){
+// Close form popup
+function closeForm() {
   formBackdrop.classList.remove('show');
   formContainer.classList.remove('show');
-  document.body.style.overflow='';
-  setTimeout(()=>mainForm.reset(),300);
+  document.body.style.overflow = '';
+  setTimeout(() => mainForm.reset(), 300);
 }
 
-function openPrivacy(){
+// Privacy modal functions
+function openPrivacy() {
   ppOverlay.classList.add('show');
-  document.body.style.overflow='hidden';
+  document.body.style.overflow = 'hidden';
 }
 
-function closePrivacy(){
+function closePrivacy() {
   ppOverlay.classList.remove('show');
-  document.body.style.overflow='';
+  document.body.style.overflow = '';
 }
 
-formBackdrop.addEventListener('click',closeForm);
-closeFormBtn.addEventListener('click',closeForm);
-privacyBtn.addEventListener('click',openPrivacy);
-ppClose.addEventListener('click',closePrivacy);
-ppOverlay.addEventListener('click',function(e){if(e.target===ppOverlay)closePrivacy();});
+// Event listeners for popup
+formBackdrop.addEventListener('click', closeForm);
+closeFormBtn.addEventListener('click', closeForm);
+privacyBtn.addEventListener('click', openPrivacy);
+ppClose.addEventListener('click', closePrivacy);
+ppOverlay.addEventListener('click', function(e) {
+  if (e.target === ppOverlay) closePrivacy();
+});
 
-document.addEventListener('click',e=>{
-  const trigger=e.target.closest('.open-any');
-  if(trigger&&!trigger.closest('#formContainer')){
+// Open form when ANY .open-any button is clicked
+// NOTE: NO Meta Pixel event fires here. It only opens the form popup.
+document.addEventListener('click', e => {
+  const trigger = e.target.closest('.open-any');
+  if (trigger && !trigger.closest('#formContainer')) {
     e.preventDefault();
-    openForm(trigger.getAttribute('data-source')||'Website');
+    openForm(trigger.getAttribute('data-source') || 'Website');
   }
 });
 
-mainForm.addEventListener('submit',function(e){
+/* ============================================================
+   FORM SUBMISSION HANDLER - FINAL ACTION
+   This is the ONLY place where Contact event fires.
+   Conditions:
+   - Form must be fully filled and valid
+   - Data gets sent to Google Sheet
+   - Contact event tracks ONCE per session
+   - User gets redirected to WhatsApp with all details
+   ============================================================ */
+mainForm.addEventListener('submit', function(e) {
   e.preventDefault();
-  
-  const name=document.getElementById('inp_name').value.trim();
-  const phone=document.getElementById('inp_phone').value.replace(/\D/g,'');
-  const age=document.getElementById('inp_age').value;
-  const language=document.getElementById('inp_language').value;
-  const profession=document.getElementById('inp_profession').value;
-  const source=sourceInfo.value || 'Website';
 
-  if(!name||phone.length<10||!age||!language||!profession){
+  const name = document.getElementById('inp_name').value.trim();
+  const phone = document.getElementById('inp_phone').value.replace(/\D/g, '');
+  const age = document.getElementById('inp_age').value;
+  const language = document.getElementById('inp_language').value;
+  const profession = document.getElementById('inp_profession').value;
+  const source = sourceInfo.value || 'Website';
+
+  // Validation
+  if (!name || phone.length < 10 || !age || !language || !profession) {
     alert('Please fill all fields correctly with a valid 10-digit phone number.');
     return;
   }
 
+  // Send data to Google Sheet
   const formData = new FormData();
   formData.append('name', name);
   formData.append('phone', phone);
@@ -2177,32 +2222,37 @@ mainForm.addEventListener('submit',function(e){
     console.error('Sheet error:', error);
   });
 
-  if(typeof fbq !== 'undefined' && !sessionStorage.getItem('contactTracked')){
-    fbq('track', 'Contact');
-    sessionStorage.setItem('contactTracked', 'true');
-  }
+  // =====================================================
+  // META PIXEL: Contact Event - FIRES ONLY HERE
+  // Only on successful form submit, only once per session
+  // =====================================================
+  trackContactEvent();
 
+  // Redirect to WhatsApp with all details
   const message = encodeURIComponent(
     `Hello Pavan Teli! 👋\n\nI'm interested in your digital mentorship program. Here are my details:\n\n📝 Name: ${name}\n📱 Phone: ${phone}\n🎂 Age: ${age}\n🌐 Language: ${language}\n💼 Status: ${profession}\n\nI'm excited to start my journey. Please share the next steps!\n\nThank you! ✨`
   );
 
   window.open(`https://wa.me/${WA_NUMBER_INT}?text=${message}`, '_blank');
-  
+
+  // Close the form popup
   closeForm();
 });
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
-  anchor.addEventListener('click',function(e){
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
     e.preventDefault();
-    const target=document.querySelector(this.getAttribute('href'));
-    if(target){
-      target.scrollIntoView({behavior:'smooth',block:'start'});
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   });
 });
 
-document.addEventListener('keydown',e=>{
-  if(e.key==='Escape'){
+// Escape key to close modals
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
     closeForm();
     closePrivacy();
   }
