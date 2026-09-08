@@ -1974,7 +1974,7 @@
             <input id="inp_name" type="text" class="form-control" required placeholder="Enter your full name">
           </div>
           <div class="col-12">
-            <label class="form-label">WhatsApp Number *</label>
+            <label class="form-label">Active Number *</label>
             <input id="inp_phone" type="tel" class="form-control" required placeholder="10-digit mobile number" maxlength="10">
           </div>
           <div class="col-6">
@@ -1982,12 +1982,11 @@
             <input id="inp_age" type="number" class="form-control" required min="15" max="65" placeholder="Your age">
           </div>
           <div class="col-6">
-            <label class="form-label">Language *</label>
+            <label class="form-label">Gender *</label>
             <select id="inp_language" class="form-select" required>
               <option value="">Select</option>
-              <option value="hindi">Hindi</option>
-              <option value="english">English</option>
-              <option value="hinglish">Hinglish</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
               <option value="other">Other</option>
             </select>
           </div>
@@ -1995,7 +1994,7 @@
             <label class="form-label">Current Status *</label>
             <select id="inp_profession" class="form-select" required>
               <option value="">Select your status</option>
-              <option>College Student</option>
+              <option>Student</option>
               <option>Working Professional</option>
               <option>Homemaker</option>
               <option>Entrepreneur</option>
@@ -2230,7 +2229,7 @@ mainForm.addEventListener('submit', function(e) {
 
   // Redirect to WhatsApp with all details
   const message = encodeURIComponent(
-    `Hello Pavan Teli! 👋\n\nI'm interested in your digital mentorship program. Here are my details:\n\n📝 Name: ${name}\n📱 Phone: ${phone}\n🎂 Age: ${age}\n🌐 Language: ${language}\n💼 Status: ${profession}\n\nI'm excited to start my journey. Please share the next steps!\n\nThank you! ✨`
+    `Hello Pavan Teli! 👋\n\nI'm interested in your digital mentorship program. Here are my details:\n\n📝 Name: ${name}\n📱 Number: ${phone}\n🎂 Age: ${age}\n⚧ Gender: ${language}\n💼 Status: ${profession}\n\nI'm excited to start my journey. Please share the next steps!\n\nThank you! ✨`
   );
 
   window.open(`https://wa.me/${WA_NUMBER_INT}?text=${message}`, '_blank');
